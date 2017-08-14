@@ -2,7 +2,6 @@ import React from 'react';
 
 
 
-//
 export class BaseController extends React.Component {
 
     constructor(props) {

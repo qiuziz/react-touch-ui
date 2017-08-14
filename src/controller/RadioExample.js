@@ -1,15 +1,7 @@
 import React from 'react';
 
 import { BaseController }  from   "./common/BaseController.js"
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-import {  Container}  from   "../components/Container.js"
-
-import { Radio }  from   "../components/Radio.js"
-
-
-//
+import { NavBar, View, VLayout, Container, Radio }  from   "../components"
 export class RadioExample extends BaseController {
 
     /*

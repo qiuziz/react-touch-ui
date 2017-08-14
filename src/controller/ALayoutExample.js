@@ -1,12 +1,5 @@
 import React from 'react';
-import { Container }  from   "../components/Container.js"
-
-import { VLayout }  from   "../components/VLayout.js"
-
-import { ALayout }  from   "../components/ALayout.js"
-import { View }  from   "../components/View.js"
-
-import { NavBar }  from   "../components/NavBar.js"
+import { Container, VLayout, ALayout, View, NavBar }  from   "../components"
 
 import { BaseController }  from   "./common/BaseController.js"
 export class ALayoutExample extends BaseController {

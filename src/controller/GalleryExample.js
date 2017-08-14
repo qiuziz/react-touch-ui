@@ -1,17 +1,8 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-import {  Container}  from   "../components/Container.js"
-
-import { Gallery }  from   "../components/Gallery.js"
-
-import { GalleryContent }  from   "../components/GalleryContent.js"
-
+import { NavBar, View, VLayout, Container, Gallery, GalleryContent }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
-//
 export class GalleryExample extends BaseController {
 
     /*

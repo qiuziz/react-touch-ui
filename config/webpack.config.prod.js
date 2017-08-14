@@ -14,21 +14,29 @@ if (!publicPath.endsWith('/')) {
 }
 
 var webpackConfig = {
-  bail: true,
-  devtool: 'source-map',
-  entry: {},
+  // bail: true,
+  // devtool: 'source-map',
+  entry: {
+    index: [path.join(__dirname, '../src/components/index.js')]
+  },
   /*entry: [
     require.resolve('./polyfills'),
     path.join(paths.appSrc, 'index')
   ],*/
   output: {
     path: paths.appBuild,
-    filename: '[name].[chunkhash:8].js',
-    chunkFilename: '[name].[chunkhash:8].chunk.js',
-    publicPath: '.'+publicPath
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
+    publicPath: '.'+publicPath,
+    library: ['aui'],
+    libraryTarget: 'umd'
   },
   resolve: {
     extensions: ['.js', '.json', ''],
+  },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom'
   },
   module: {
     preLoaders: [
@@ -41,9 +49,11 @@ var webpackConfig = {
     loaders: [
       {
         test: /\.js$/,
-        include: paths.appSrc,
         loader: 'babel',
-        query: require('./babel.prod')
+        query: require('./babel.prod'),
+        include: [
+          path.join(__dirname, '../src/components')
+        ]
       },
 
       {
@@ -139,39 +149,39 @@ var webpackConfig = {
         screw_ie8: true
       }
     }),
-    new ExtractTextPlugin('[name].[contenthash:8].css')
+    new ExtractTextPlugin('[name].css')
   ]
 };
 
-entries.forEach(function(file) {
-  var filenames = file.split('.');
+// entries.forEach(function(file) {
+//   var filenames = file.split('.');
 
 
-  if (filenames[1] === 'js') {
-    webpackConfig.entry[filenames[0]] = [
-      require.resolve('./polyfills'),
-      path.join(paths.appSrc, 'entries/' + filenames[0])
-    ]
-      webpackConfig.plugins.push(new HtmlWebpackPlugin({
-      inject: true,
-      template: paths.appHtml,
-      filename:   filenames[0] + '.html',
-      chunks:  + filenames[0],
-      favicon: paths.appFavicon,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        keepClosingSlash: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true
-      }
-    }))
-  }
-})
+//   if (filenames[1] === 'js') {
+//     webpackConfig.entry[filenames[0]] = [
+//       require.resolve('./polyfills'),
+//       path.join(paths.appSrc, 'entries/' + filenames[0])
+//     ]
+//       webpackConfig.plugins.push(new HtmlWebpackPlugin({
+//       inject: true,
+//       template: paths.appHtml,
+//       filename:   filenames[0] + '.html',
+//       chunks:  + filenames[0],
+//       favicon: paths.appFavicon,
+//       minify: {
+//         removeComments: true,
+//         collapseWhitespace: true,
+//         removeRedundantAttributes: true,
+//         useShortDoctype: true,
+//         removeEmptyAttributes: true,
+//         removeStyleLinkTypeAttributes: true,
+//         keepClosingSlash: true,
+//         minifyJS: true,
+//         minifyCSS: true,
+//         minifyURLs: true
+//       }
+//     }))
+//   }
+// })
 
 module.exports = webpackConfig;

@@ -7,7 +7,6 @@ const kvSize = (key, x) => {
     var r, re; // 声明变量。
     re =  /^\d+$/;
     r = re.exec(x);
-
     if (r) {
 
         if(Config.sizeUnit.indexOf("rem") != -1){

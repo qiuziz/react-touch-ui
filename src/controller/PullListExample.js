@@ -1,16 +1,7 @@
 import React from 'react';
 import { BaseController }  from   "./common/BaseController.js"
 
-import { PullList }  from   "../components/PullList.js"
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import { VLayout }  from   "../components/VLayout.js"
-
-import {  Container}  from   "../components/Container.js"
-
-
-
-//
+import { PullList, NavBar, View, VLayout, Container }  from   "../components"
 export class PullListExample extends BaseController {
     /*
      * 功能 : 构造函数 可以定义state变量

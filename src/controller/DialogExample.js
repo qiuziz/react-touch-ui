@@ -1,24 +1,8 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-
-import {  HLayout}  from   "../components/HLayout.js"
-
-
-import {  Container}  from   "../components/Container.js"
-import { Button }  from   "../components/Button.js"
-
-
-import { Switch }  from   "../components/Switch.js"
-
-import { showTost,showLoading ,stopLoading}  from   "../components/Toast.js"
-import {showDialogConfirm,showDialogWarning } from   "../components/Dialog.js"
-
+import { NavBar, View, VLayout, HLayout, Container, Button, Switch, showTost,showLoading ,stopLoading }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
-//
 export class DialogExample extends BaseController{
 
     /*

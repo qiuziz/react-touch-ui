@@ -1,21 +1,8 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-
-import {  HLayout}  from   "../components/HLayout.js"
-
-
-import {  Container}  from   "../components/Container.js"
-import { Button }  from   "../components/Button.js"
-
-
-import { Badge }  from   "../components/Badge.js"
+import { NavBar, View, VLayout, HLayout, Container, Button, Badge }  from   "../components"
 import { ButtonExample }  from   "./ButtonExample.js"
-
-//
 import { BaseController }  from   "./common/BaseController.js"
 export class BadgeExample extends BaseController {
 

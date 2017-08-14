@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { VLayout }  from   "../../components/VLayout.js"
-import { View }  from   "../../components/View.js"
+import { VLayout, View }  from   "../../components"
 
 
 import  './NavigationController.scss'

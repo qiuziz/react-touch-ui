@@ -2,14 +2,7 @@ import React from 'react';
 
 import { BaseController }  from   "./common/BaseController.js"
 
-import { PullList }  from   "../components/PullList.js"
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-
-import {  Container}  from   "../components/Container.js"
-import { TabBar }  from   "../components/TabBar.js"
-import { TabBarItem }  from   "../components/TabBarItem.js"
-//
+import { PullList, NavBar, View, Container, TabBar, TabBarItem }  from   "../components"
 
 export class TabBarExample extends BaseController {
 

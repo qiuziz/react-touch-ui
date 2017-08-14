@@ -1,15 +1,8 @@
  import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-import {  Container}  from   "../components/Container.js"
-
-import { Checkbox }  from   "../components/Checkbox.js"
-
+import { NavBar, View, VLayout, Container, Checkbox }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
-//
 export class CheckboxExample extends BaseController {
 
     /*

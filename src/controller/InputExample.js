@@ -1,24 +1,7 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-
-import {  HLayout}  from   "../components/HLayout.js"
-
-
-import {  Container}  from   "../components/Container.js"
-import { Button }  from   "../components/Button.js"
-
-
-import { Input }  from   "../components/Input.js"
-
-
-
-import { Textarea }  from   "../components/Textarea.js"
-
-//
+import { NavBar, View, VLayout, HLayout, Container, Button, Input, Textarea }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
 export class InputExample extends BaseController {
 

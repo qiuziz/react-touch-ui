@@ -2,20 +2,7 @@ import React from 'react';
 var ReactDOM = require("react-dom");
 
 
-import { VLayout }  from   "../components/VLayout.js"
-
-
-import { NavBar }  from   "../components/NavBar.js"
-
-import { List }  from   "../components/List.js"
-import { ListItem }  from   "../components/ListItem.js"
-
-import { View }  from   "../components/View.js"
-
-
-import {  Container}  from   "../components/Container.js"
-import { Scroll }  from   "../components/Scroll.js"
-
+import { VLayout, NavBar, List, ListItem, View, Container, Scroll }  from   "../../build"
 
 import { NavBarExample }  from   "./NavBarExample.js"
 import { PullListExample }  from   "./PullListExample.js"
@@ -249,6 +236,7 @@ export class Home extends BaseController {
                         {data.map((data, i) => {
                             return (
                                 <ListItem
+                                    key={i}
                                     {...data}
                                     tag={i}
                                     onTouchTap={this.onTouchTap.bind(this)}

@@ -1,22 +1,7 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-
-import {  HLayout}  from   "../components/HLayout.js"
-
-
-import {  Container}  from   "../components/Container.js"
-import { Button }  from   "../components/Button.js"
-
-
-import { Switch }  from   "../components/Switch.js"
-
-
-import {showActionsheet,showActionsheetIOS } from   "../components/Actionsheet.js"
-
+import { NavBar, View, VLayout, HLayout, Container, Button, Switch, showActionsheet, showActionsheetIOS }  from   "../../build"
 
 import { BaseController }  from   "./common/BaseController.js"
 

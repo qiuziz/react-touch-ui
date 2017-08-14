@@ -1,16 +1,8 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-
-import {  HLayout}  from   "../components/HLayout.js"
-import {  Container}  from   "../components/Container.js"
-import { ButtonGroup }  from   "../components/ButtonGroup.js"
-
+import { NavBar, View, VLayout, HLayout, Container, ButtonGroup }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
-//
 export class ButtonGroupExample extends BaseController{
 
     /*

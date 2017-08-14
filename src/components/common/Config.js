@@ -79,7 +79,7 @@ var NavBarLeftIcon = IOBack;
 var NavBarTitleFontSize = "18";
 var NavBarItemFontSize = "16";
 var NavBarIconSize = 30;
-var NavBarH = 44;
+var NavBarH = '44';
 
 
 //Badge  配置

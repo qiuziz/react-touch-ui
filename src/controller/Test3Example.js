@@ -1,17 +1,9 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-import {  Container}  from   "../components/Container.js"
-
-import { Button }  from   "../components/Button.js"
-
+import { NavBar, VLayout, Container, Button }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
 
-
-//
 export class Test3Example extends BaseController {
 
     /*
@@ -19,7 +11,6 @@ export class Test3Example extends BaseController {
      */
     constructor(props) {
         super(props);
-
     }
 
     /*
@@ -83,7 +74,7 @@ export class Test3Example extends BaseController {
 
                 <NavBar title="Test3Example" onLeftTouchTap={this.onTouchTapBack.bind(this)}>
                 </NavBar>
-                <VLayout isFill ={true} bgColor="#00f">
+                <VLayout isFill={true} bgColor="#00f">
 
 
                     <Button    ml="10" mt="10" w="100" h="40" bgColo1r="#ff0" fontColor1="#000" onTouchTap={this.onTouchTapBack.bind(this)}>

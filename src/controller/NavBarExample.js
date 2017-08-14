@@ -1,17 +1,6 @@
 import React from 'react';
 import { BaseController }  from   "./common/BaseController.js"
-import { Container }  from   "../components/Container.js"
-
-import { VLayout }  from   "../components/VLayout.js"
-
-
-import { NavBar }  from   "../components/NavBar.js"
-
-import { ALayout }  from   "../components/ALayout.js"
-import { View }  from   "../components/View.js"
-
-
-import { Img }  from   "../components/Img.js"
+import { Container, VLayout, NavBar, ALayout, View, Img }  from   "../components"
 
 import IOBack from 'react-icons/lib/io/android-person';
 export class NavBarExample extends BaseController {

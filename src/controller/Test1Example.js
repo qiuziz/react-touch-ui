@@ -1,20 +1,10 @@
 import React from 'react';
 
 
-import { NavBar }  from   "../components/NavBar.js"
-import { View }  from   "../components/View.js"
-import {  VLayout}  from   "../components/VLayout.js"
-import {  Container}  from   "../components/Container.js"
-
-import { Button }  from   "../components/Button.js"
+import { NavBar, View, VLayout, Container, Button }  from   "../components"
 import { Test2Example }  from   "./Test2Example.js"
-
-
 import { BaseController }  from   "./common/BaseController.js"
-
 import { addEventListener,removeEventListener,triggerEvent }  from   "../utils/Event.js"
-
-//
 export class Test1Example extends BaseController {
 
     constructor(props) {
