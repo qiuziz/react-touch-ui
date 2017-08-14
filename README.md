@@ -19,11 +19,15 @@ $ npm start
 
 项目使用
 -----
-
-`npm install react-touch-ui`
-`import * as TouchUI from 'react-touch-ui'`
+```shell
+npm install react-touch-ui
+import * as TouchUI from 'react-touch-ui'
+```
 or
-`import { List } from 'react-touch-ui'`
+
+```
+import { List } from 'react-touch-ui'
+```
 
 第三方库
 -----
