@@ -7,22 +7,12 @@ react 移动开发框架
 * 支持单页面和页面应用,entries 里面可以放多个入口。这样同时支持微信公众号,应用内嵌,cordova 混合应用开发场景。
 
 
-演示
-------------
-https://dazhifu.github.io/react-touch-ui/
-
-
-环境要求
-------------
-* node `^4.2.0`
-* npm `^3.0.0`
-
 项目开发
 ---------------
 
 ```shell
-$ git clone https://git.coding.net/staraple/hello-react.git
-$ cd hello-react
+$ git clone https://github.com/qiuziz/react-touch-ui.git
+$ cd react-touch-ui
 $ npm install
 $ npm start
 ```
@@ -30,8 +20,10 @@ $ npm start
 项目使用
 -----
 
-* `npm start`  开始开发
-* `npm run build` 将待发布代码编译到build 目录
+`npm install react-touch-ui`
+`import * as TouchUI from 'react-touch-ui'`
+or
+`import { List } from 'react-touch-ui'`
 
 第三方库
 -----
