@@ -2,6 +2,7 @@ import React from 'react';
 import { BaseController }  from   "./common/BaseController.js"
 
 import { PullList, NavBar, View, VLayout, Container }  from   "../components"
+
 export class PullListExample extends BaseController {
     /*
      * 功能 : 构造函数 可以定义state变量
@@ -104,7 +105,7 @@ export class PullListExample extends BaseController {
 
         return (
 
-            < Container>
+            <Container>
 
                 <NavBar title="PullListExample" onLeftTouchTap={this.onTouchTapBack.bind(this)}>
                 </NavBar>

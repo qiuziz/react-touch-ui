@@ -22,7 +22,7 @@ export class TabBarItem extends React.Component {
 
         selFontColor: React.PropTypes.string,         // 选中字体颜色
         selIconColor: React.PropTypes.string,         // 选中bar 背景颜色
-
+        icon: React.PropTypes.string,
         iconSize: React.PropTypes.string,          // 字体颜色
         onTouchTap: React.PropTypes.func,          // 左item  tap 回调函数
         isSel:React.PropTypes.bool,
@@ -118,10 +118,10 @@ export class TabBarItem extends React.Component {
         return (
 
             <View bgColor = {this.state.bgColor } className="aui-layout-flex-grow-1" onTouchTap={this.onTouchTap.bind(this)}>
-                < VLayout  ah ="center" >
+                <VLayout  ah="center">
                     <Icon size = {this.state.iconSize}  color={iconColor} />
                     <View  fontSize = {this.state.fontSize} fontColor ={fontColor} mb ='3'>  {lable}  </View>
-                </VLayout >
+                </VLayout>
 
             </View>
 

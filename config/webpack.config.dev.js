@@ -9,7 +9,7 @@ var paths = require('./paths');
 var entries = require('./entries');
 
 var webpackConfig = {
-  devtool: 'eval',
+  devtool: 'map',
   entry: {
     devServerClient:  require.resolve('webpack-dev-server/client') + '?/',
     // main: [

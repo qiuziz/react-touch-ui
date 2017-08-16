@@ -27,7 +27,7 @@ import { TestExample  }  from   "./TestExample.js"
 
 import { BaseController }  from   "./common/BaseController.js"
 import { EventExample  }  from   "./EventExample.js"
-export class Home extends BaseController {
+export class Home extends React.Component {
     constructor(props) {
         super(props);
         //console.log('wwww', document.getElementsByTagName('html'))
@@ -37,7 +37,6 @@ export class Home extends BaseController {
 
 
     onTouchTap(e, tag) {
-
 
 
         if (tag == 0) {
@@ -126,8 +125,7 @@ export class Home extends BaseController {
      * 注意 : 一定要调用super.componentDidMount();  或者把这个通知去掉
      */
     componentDidMount() {
-
-        super.componentDidMount();
+        // super.componentDidMount();
     }
     /*
      * 功能 :  组件恢复显示通知函数

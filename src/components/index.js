@@ -30,6 +30,7 @@
  import { showTost,showLoading,stopLoading } from './Toast';
  import { View } from './View';
  import { VLayout } from './VLayout';
+ import { NavigationRouter } from './NavigationRouter';
 
  export {
   showActionsheet,
@@ -62,5 +63,6 @@
   showLoading,
   stopLoading,
   View,
-  VLayout
+  VLayout,
+  NavigationRouter
  }

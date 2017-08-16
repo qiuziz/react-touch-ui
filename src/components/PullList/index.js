@@ -399,7 +399,7 @@ export class PullList  extends React.Component {
 
         var classname = classnames(className,"iscroll-wrapper");
 
-
+        console.log(children)
         return (
 
             <VLayout className={classname}   {...props}  >

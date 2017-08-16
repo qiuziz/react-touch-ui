@@ -8,7 +8,7 @@ import { Home }  from   "../controller/Home.js"
 
 
 
-import { NavigationController }  from   "../controller/common/NavigationController.js"
+import { NavigationRouter }  from   "../components"
 
 injectTapEventPlugin();
 
@@ -25,10 +25,10 @@ export class App extends React.Component {
             rootView:  <Home tag="Home" > </Home>
         };
         return (
-            <NavigationController {...props} />
+            <NavigationRouter {...props} />
         );
     }
 }
-ReactDOM.render(< App/>, document.querySelector("#root"));
+ReactDOM.render(<App/>, document.querySelector("#root"));
 
 

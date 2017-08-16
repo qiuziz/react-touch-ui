@@ -30,7 +30,7 @@ export class TabBar extends React.Component {
             tabitems: [],
             selIndex: this.props.selIndex,
         };
-        this.state.selState = false;
+        this.state.selState = [false];
         this.state.selState[this.props.selIndex] = true;
         this.state.selIndex = this.props.selIndex;
 
@@ -60,11 +60,27 @@ export class TabBar extends React.Component {
                 this.state.containers.push(ii)
             }
         });
-    };
+    }
+
+    componentWillReceiveProps(nexeProps) {
+        var containers = [];
+        nexeProps.children.map((o, i)=> {
+            
+            if (o.props.componentTag !== "TabBarItem") {
+                var ii = React.cloneElement(o,
+                    {
+                        tag: this.state.containers.length,
+                    }
+                );
+                containers.push(ii)
+            }
+        });
+        this.setState({containers});
+    }
 
     onTouchTap(e, tag) {
 
-        this.state.selState = false;
+        this.state.selState = [false];
         this.state.selState[tag] = true;
         this.state.selIndex = tag;
         this.forceUpdate();
@@ -95,7 +111,6 @@ export class TabBar extends React.Component {
                 }
             )
         });
-
 
         var containers = this.state.containers.map((o, i)=> {
             if (i == this.state.selIndex) {

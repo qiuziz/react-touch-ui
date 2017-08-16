@@ -73,7 +73,7 @@ export class TabBarExample extends BaseController {
                     </View>
                     <TabBarItem lable="首页"  fontSize = '16'>
 
-                    </TabBarItem  >
+                    </TabBarItem>
                     <TabBarItem lable="活动" >
 
                     </TabBarItem>

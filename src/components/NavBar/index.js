@@ -31,6 +31,7 @@ export class NavBar extends React.Component {
         bgColor: Config.NavBarBgColor,
         fontColor: Config.NavBarFontColor,
         leftIcon: Config.NavBarLeftIcon,
+        rightIcon: Config.NavBarLeftIcon,
         titleFontSize: Config.NavBarTitleFontSize,
         itemFontSize: Config.NavBarItemFontSize,
         iconSize: Config.NavBarIconSize,
