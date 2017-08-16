@@ -62,11 +62,11 @@ export class Switch extends React.Component {
 
     onTouchTap(e) {
 
-        this.setState({checked: !this.state.checked});
         var onSwitch = this.props.onSwitch;
         if (onSwitch) {
-            onSwitch(e, this.state.checked);
+            onSwitch(e, !this.state.checked);
         }
+        this.setState({checked: !this.state.checked});
         e.preventDefault();
 
     }
