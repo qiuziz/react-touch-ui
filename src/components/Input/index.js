@@ -12,16 +12,6 @@ import { Layout }  from   "../Layout"
 import  Config   from   "../common/Config.js"
 
 export class Input extends React.Component {
-    static propTypes = {
-        fontSize: React.PropTypes.string,       // 字体大小
-        fontColor: React.PropTypes.string,      // 字体颜色
-        type: React.PropTypes.string,            // 类型 默认是编辑,search  搜索
-        placeholder: React.PropTypes.string,      // 提示文字
-        value: React.PropTypes.string,           // 默认文字
-        maxLength: React.PropTypes.string,      //  最大长度
-        onChange: React.PropTypes.string,          // onchange 方法
-    };
-
     static defaultProps = {
         fontSize: Config.InputFontSize,
         fontColor: Config.InputFontColor,
@@ -59,19 +49,27 @@ export class Input extends React.Component {
         var IORadioIcon;
 
         return (
-            <Layout flexDirection="row" justifyContent="flex-start" h= {this.props.h} className="aui-searchinput-outline"
-                {...props}
-            >
+            <Layout
+                flexDirection="row"
+                justifyContent="flex-start"
+                h={this.props.h}
+                className="aui-searchinput-outline">
 
                 <Layout alignSelf="center" mr="3">
                     <IOSearch size={30}/>
-                </Layout >
+                </Layout>
 
-                <input style={inputStyle} type={type} className="aui-input" placeholder={placeholder}
-                       value={this.state.value} onChange={this.handle.bind(this)} data-input-clear="1"
-                       data-input-search="1">
-                </input>
-            </Layout >
+                <input
+                    style={inputStyle}
+                    type={type}
+                    className="aui-input"
+                    placeholder={placeholder}
+                    value={this.state.value}
+                    onChange={this.handle.bind(this)}
+                    data-input-clear="1"
+                    data-input-search="1"
+                    {...props} />
+            </Layout>
         )
 
     }
@@ -79,15 +77,18 @@ export class Input extends React.Component {
     renderCommon(inputStyle, type, placeholder, props) {
 
         return (
-            <View className="aui-input-outline"
-                {...props}
-            >
-                <input style={inputStyle} type={type} className="aui-input" placeholder={placeholder}
-                       maxLength={this.state.maxLength }
-                       value={this.state.value} onChange={this.handle.bind(this)} data-input-clear="1"
-                       data-input-search="1">
-                </input>
-
+            <View className="aui-input-outline" >
+                <input
+                    style={inputStyle}
+                    type={type}
+                    className="aui-input"
+                    placeholder={placeholder}
+                    maxLength={this.state.maxLength }
+                    value={this.state.value}
+                    onChange={this.handle.bind(this)}
+                    data-input-clear="1"
+                    data-input-search="1"
+                    {...props}/>
             </View>
         );
     }
