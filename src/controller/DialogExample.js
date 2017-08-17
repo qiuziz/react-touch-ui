@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { NavBar, View, VLayout, HLayout, Container, Button, Switch, showTost,showLoading ,stopLoading }  from   "../components"
+import { NavBar, View, VLayout, HLayout, Container, Button, Switch, showTost,showLoading ,stopLoading, showDialogConfirm, showDialogWarning }  from   "../components"
 import { BaseController }  from   "./common/BaseController.js"
 export class DialogExample extends BaseController{
 
