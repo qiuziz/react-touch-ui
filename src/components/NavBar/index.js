@@ -119,10 +119,9 @@ export class NavBar extends React.Component {
             )
         }
         if (rightLabel) {
-
             return (
                 <HLayout av="center" ah='end' w="18%" onTouchTap={onRightTouchTap}>
-                    <View fontColor={this.state.fontColor} fontSize={this.state.itemFontSize}> {this.state.rightLabel}  </View>
+                    <View fontColor={this.state.fontColor} fontSize={this.state.itemFontSize}> {rightLabel}  </View>
                 </HLayout>
             )
         }
@@ -149,7 +148,7 @@ export class NavBar extends React.Component {
 
             ...props
             } = this.props;
-
+console.log(this.renderRight())
         return (
 
             <HLayout av="center" ah="space-between" h='44' bgColor={this.state.bgColor} pl="5" pr="10"  baseStyle = { { zIndex:"2"} }
